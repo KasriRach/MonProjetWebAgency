@@ -1,0 +1,831 @@
+body
+{
+   font-family: 'Roboto', sans-serif;
+   color: #181818; 
+   margin: auto;/*tient sur une page et centré avec margin auto*/ 
+}
+
+/* Header................................................................................................................................................ */
+
+
+header
+{   
+    display: flex;/*alignement des blocs*/
+    justify-content: space-between;/*créer un espace entre les # blocs*/
+    /* Les éléments flexibles sont regroupés à la fin */
+    align-items: center;
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    z-index: 10;/*permet de mettre la baniere en premier plan*/
+      
+} 
+
+.logo img
+{
+    width: 300px;
+}
+.logo 
+{  
+   
+   position: relative;
+   margin-top: 50px;
+   margin-left: 180px;
+}
+.fixed
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*navigation*/ 
+  
+header li /*création du trait bleu en creant une cellule pour la nav*/
+{
+   
+    padding:38px 10px 40px 10px;/*espacement du texte entre cellule et creation du border top*/ 
+    border-top: 3px solid  white;/*création du border dans "li" element de la liste*/
+   
+}
+ header li:hover
+{
+    border-top: 3px solid #5CADD3;
+   
+}
+.Accueil
+{
+    border-top: 3px solid rgb(92, 173, 211);
+}
+
+ header ul
+{
+
+    list-style-type: none;/*supprimer les puces*/
+    display: flex;/*alignement*/
+    margin-left: 510px;/*110 à gauche*/
+    align-items: baseline;/*blocs alignés sur la même ligne*/
+    padding-bottom: 10px;/*10 px du bas*/
+    padding-top: 20px;/*permet au bloc de se caler en haut de le page*/  
+}   
+
+ header li a
+{
+    font-size: 1em;
+    color: #181818; 
+    text-decoration: none;/*aucune décoration*/
+	text-align:right;/*alignement du bloc à droite*/
+}
+
+/*<-fleches->*/
+
+.fleche_droite
+{
+    display: flex;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 2.5em;
+    height: 5em;
+    justify-content: center;
+    align-items: center;
+    top: 305px;
+    right: 0px;
+    z-index: 1;
+    border-radius: 2.5rem 0 0 2.5rem;
+}
+    
+.fleche_gauche
+{
+    display: flex;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 2.5em;
+    height: 5em;
+    justify-content: center;
+    align-items: center;
+    top: 305px;
+    z-index: 1;
+    left: 0px;
+    border-radius: 0 2.5rem 2.5rem 0;
+}
+
+.fa-angle-left
+{
+    color: white;
+    font-size: 2.5em;
+    margin-left: -6px;
+}
+
+.fa-angle-right
+{
+    color: white;
+    font-size: 2.5em;
+    margin-right: -6px;
+}
+
+
+
+
+ 
+/* Header................................................................................................................................................ 
+
+
+/*section*/
+/*image de la fillette*/
+ 
+#image_de_fond
+{
+    width: 100%;
+
+    position: relative;
+    margin-top: 90px;
+    
+}
+ 
+#image_de_fond img
+ 
+{
+    width: 100%;
+    height: auto;    
+}
+
+ 
+#image_de_fond button
+/*création du bouton bleu*/
+/*le bouton de nav "plus d'infos"*/
+{
+    padding: 10px 10px 10px 10px;/*ecratement du texte dans le rectangle*/
+    color: #fff;
+    background-color: #5CADD3;
+    border:none;
+    border-radius: 3px;
+    font-size: 1em;
+    margin: 10px;
+    border-bottom: 3px solid  #3f929e;
+    margin-left: 150px;
+}
+
+
+
+/*contenu de l'image*/
+h1/*WEBAGENCY: L'AGENCE DE TOUS VOS PROJETS!*/
+{
+    font-size: 2.1em;/*taille de la police*/
+    color: white;
+    text-transform: uppercase;/*mes titres soient toujours écrits en majuscules. Cette propriété transforme en effet le texte en majuscules (elle peut aussi faire l'inverse aveclowercase*/
+    margin-left: 150px;/*decale le texte à gauche*/
+    margin-top: -380px;
+}    	
+h2/*Vous avez un projet web ? La WebAgency vous aide à le réaliser*/
+{
+	font-size: 1em;/*taille de la police*/
+	color: white;
+    margin-left: 150px;  
+    margin-top: -10px;
+
+}
+em/*webahency*/
+{
+	color:  #5CADD3 ;/*couleur de la police en bleu*/
+	font-style: normal;/*supprime l'italique qui existe sur la balise <em>*/
+}
+
+
+    
+
+    /*nos services*/
+h3/*mise en forme du titre*/
+{
+    font-size: 2em;
+    text-transform: uppercase;/*mes titres soient toujours écrits en majuscules. Cette propriété transforme en effet le texte en majuscules (elle peut aussi faire l'inverse aveclowercase*/
+    margin:auto;
+    margin-top: 50px;
+}
+hr/*création du séparateur*/
+{ 
+    
+    height: 1px;/*epaisseur du trait*/
+    width: 10%;/*langueur du trait*/
+    background: rgba(220,220,220,0.6) ;/*couleur de fond*/
+    border: none;/*suppression des bordures*/
+    
+}
+.pointbleu
+{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;/*création du point*/
+    background: #5CADD3 ;
+    margin: auto;
+    margin-top: -17px;
+    border:3px solid white; /*création d'un liseret blanc autour du point*/
+
+}
+.separateur/*ensemble séparateur et point bleu*/
+{
+    margin: auto;
+    margin-top: 0px;
+}
+    
+
+#Nos_services /*positionnement du titre du séparateur et du texte*/
+{
+    text-align: center; 
+    padding-top: 200px;
+
+
+}
+
+.icones/*photo de l'ordinateur*/
+{
+   display:flex ;/*creation d'une div pour mettre l'image à gauche avec le float left*/
+   float:left; /*faire floater l'image à gauche*/
+   margin-left: 150px; 
+ } 
+ .icones img/*pemmet de modifier l'image en prenant la valeur img*/
+ {
+    width: 600px;/*largeur de 300 px pour une hauteur automatique*/
+    height:auto;
+ }
+.services
+{
+    margin: 20px;/*marge de 20px entre le logo cercle et le texte*/
+     
+}
+ 
+
+
+
+    /*icones blues*/
+
+
+#iconebleu, #iconebleu1, #iconebleu2/*création d'une id qui englobe le cercle l'icone et le point*/
+{
+  display: flex;
+  align-items: center;
+
+}
+
+.fa-chart-line/*icone qui fonctionne avec fontawesome-free-5.11.2-web*/
+{
+    font-size: 1.2em;
+    padding: 15px 5px 5px 15px;
+    color:  #5CADD3 ;
+}
+.fa-chart-pie/*icone*/
+{
+    font-size: 1.2em;
+    padding: 15px 5px 5px 15px;
+    color:  #5CADD3 ;
+}
+.fa-cubes/*icone*/
+{
+    font-size: 1.2em;
+    padding: 15px 5px 5px 15px;
+    color:  #5CADD3 ;
+}
+.cercle/*cercle qui contient l'icone*/
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;/*création du cercle en mettant le border radius à 50%*/
+    border: 1px solid   rgba(220,220,220,0.6) ; /*opacite du cercle ave le rgba et 0.6*/
+            
+}
+.point_cercle/*le point bleu situé sur le cercle à droite*/
+{
+
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #5CADD3 ;
+  margin: 42px;
+  margin-top: -20px;
+  border:3px solid white;  
+
+
+}
+
+/*Section2*/
+/*Nos projets*/
+#Projets
+{
+    background-color:  #f1f7f7;
+    padding-top: 3px;
+    
+}
+
+#Nos_projets /*positionnement du titre séparateur et la nav*/
+{
+    text-align: center; 
+    padding-top: 5px;
+    margin: auto;
+
+    
+}
+
+ /*bouton de navigation*/
+
+/*menu*/
+.navigation ul
+{
+    list-style-type: none;/*suprime les puces*/
+    display: flex;  /*alignement sur une ligne*/
+    justify-content:center;
+
+ 
+    
+}   
+ .navigation li
+{
+   
+   
+    margin-right: 0px;/*suprime les marges entre les # menus*/
+    padding:5px 10px;/*espacement du texte entre cellule*/ 
+    border: 0px solid  #e0e7e7 ;/*création du border dans "li" element de la liste*/
+    background-color: #e0e7e7 ;/*fond gris*/
+    
+}
+
+
+ .navigation li:hover 
+ {
+    color: white;/*changement de couleur lors du passage de la souris*/
+    background:  #5CADD3 ;
+    position: relative;
+    border-bottom: 3px solid  #3f929e;/*border du bas change de couleur lors du passage de la souris*/
+    text-decoration: none;
+ }
+    
+   
+/*Arrondi sur les bords des angles gauche droites en passant la souris sur le bouton nav*/
+   #All_Works/*a:hover suivi de la ',' puis l'Id */
+{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background:  #5CADD3 ;
+    color: white;/*changement de couleur lors du passage de la souris*/
+    border-bottom: 3px solid  #3f929e;/*border du bas change de couleur lors du passage de la souris*/
+    text-decoration: none;
+    
+ }   
+
+   a:hover, #Portfolio
+ {
+    border-top-right-radius: 4px;/*arrondis des bords*/
+    border-bottom-right-radius: 4px; 
+ }
+.fa-caret-down/*creation du tringle*/
+{
+    visibility: visible;/*toujours visible*/
+    margin-top:  20px;
+    margin-left: 31px;
+    position: absolute;
+    color:   #3f929e ;
+    font-size: 1.2em;  
+}
+  
+
+/*création d'un ensemble de photos*/
+
+
+#ensemble_photos
+{
+  margin:auto;
+  padding-left: 380px;
+  
+}
+  
+
+figure
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 300px;
+    height:200px;
+   
+}
+ 
+figure img
+{
+
+    width: 100%;
+    position: absolute;    
+}
+ 
+figure:hover figcaption
+{
+    visibility: visible;
+}
+figure p 
+{
+padding: 0px 15px 0px 15px;
+}
+.legende
+{
+    position: absolute;
+    display:block;
+    right: 0;/*positionnement de la legende soit en bas avec 0 à droite et gauche*/
+    left: 0px;
+    bottom:0;
+    height: 100px;
+    background-color: rgba(1, 1, 1, 0.5);
+    color: #fff;/*caractère blanc*/
+    visibility: hidden;
+}
+.legendes
+{
+    position: absolute;
+    display:block;
+    right: 0;/*positionnement de la legende soit en bas avec 0 à droite et gauche*/
+    left: 0px;
+    bottom:0;
+    height: 100px;
+    background-color: rgba(1, 1, 1, 0.5);
+    color: #fff;/*caractère blanc*/
+    visibility: visible;
+}
+/* le cercle  avec le  logo oeil*/
+
+.cercle1/*cercle qui contient l'icone*/
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;/*création du cercle en mettant le border radius à 50%*/
+    background-color: #5CADD3; /*opacite du cercle ave le rgba et 0.6*/
+    border: 2px solid white;
+    position: absolute;
+    left: 80%;
+    top: -20px;        
+}
+.fa-eye/*icone*/
+{
+    font-size: 0.8em;
+    padding: 13px 5px 5px 13px;
+    /*ou alors 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fonctionne également mais pour le cercle
+    perment de centrer l'oeil dans le cercle*/
+}    
+/*Section3*/
+/*contact*/
+#contact
+{
+    display: flex;/*alignement bloc*/
+    align-items: center;
+    float: right;
+    background-color: rgba(241,247,247,0.8);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    height: 450px;
+    width: 350px;
+    font-size: 0.9em;
+    position: relative; 
+    margin: 120px 150px;/*centrage du bloc contact*/
+    opacity:;
+    
+}
+iframe
+{
+    display: flex;
+    position: absolute;
+    width: 100%;/*largeur et hauteur sur toute la page*/
+    height: 100%;
+}  
+#filtre/*filtre de couleur*/
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+    background-color:rgba(152,199,240,0.35);
+}
+
+.bouton_bleu1/*le bouton de  send message*/
+{ 
+    
+   background:  #5CADD3 ;
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 1em;
+    text-align: center;
+    padding: 8px 8px 8px 8px;
+    color: white;
+    text-decoration: none;
+    margin-top:  9px; 
+    border-bottom: 3px solid  #3f929e;   
+}
+h5 
+{
+    font-size: 30px;
+    padding: 0px;
+    margin:0px;
+} 
+
+input 
+{
+    width: 95%;/*taille de la cellule ici elle occupe 95% du bloc*/
+    height: 25px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #181818; 
+    font-size: 1em;  
+}
+textarea 
+{
+    width: 95%;
+    height: 120px;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #181818;
+    font-size: 1em; 
+}
+
+/*...............................Responsive......................*/
+/*........Smartphone............*/
+
+
+
+@media only screen and (max-device-width: 480px) {
+body
+{
+   font-family: 'Roboto', sans-serif;
+   color: #181818; 
+   margin: 0px;/*tient sur une page et centré avec margin auto*/
+}
+
+
+header {
+height : auto;
+max-width: 100%;
+top: 0; left: 0; right: 0;
+position: fixed;
+z-index: 10;/*permet de mettre la baniere en premier plan*/
+
+
+}
+
+.logo img {
+width : 230px;
+}
+.logo {
+margin: 10px;
+margin-left : 70px;
+}
+header ul {
+margin-left : -280px;
+padding-bottom: 0px;/*10 px du bas*/
+padding-top: 50px;
+}
+header li {
+padding : 0;
+}
+header ul li a {
+font-size : 1em;
+padding-right : 10px;
+}
+
+.Accueil
+{
+    border-top:hidden;
+}
+p
+{
+    font-size: 0.8em;
+}
+h1/*WEBAGENCY: L'AGENCE DE TOUS VOS PROJETS!*/
+{
+    font-size: 1em;/*taille de la police*/
+    color: black;
+    margin-left: 0px;
+    margin-top: 10px;
+    text-align: center;
+}       
+h2/*Vous avez un projet web ? La WebAgency vous aide à le réaliser*/
+{
+    font-size: 0.75em;/*taille de la police*/
+    color: black;
+    margin-left: 0px;  
+    margin-top: -10px;
+    text-align: center;
+}
+#image_de_fond {
+margin-top : 105px;
+max-width : 100%;
+}
+#image_de_fond button {
+
+font-size: 0.65em;
+}
+.fleche_droite, .fleche_gauche, .fa-angle-left, .fa-angle-right
+{
+    visibility: hidden;
+}
+hr/*création du séparateur*/
+{     
+    width: 20%;/*langueur du trait*/    
+}
+.icones {
+display : flex;
+float : none;
+margin : auto;
+}
+.icones img {
+width : 350px;
+height : auto;
+margin:auto;
+}
+h3 {
+font-size : 1.1em;
+}
+.services
+{
+  text-align: justify;  
+}
+#Service {
+max-width :100%;
+margin-top: -200px;
+}
+#Nos_services
+{
+    margin: auto;
+}
+
+.navigation ul {
+margin-left : -30px;
+font-size : 0.8em;
+}
+.fa-caret-down {
+margin-top : 14px;
+margin-left:17px;
+font-size : 1.5em;
+}
+#ensemble_photos
+{
+  margin:auto;
+  padding-left: 0px;
+  
+}
+
+#contact {
+height : 325px;
+width : 200px;
+font-size : 0.8em;
+margin : 150px;
+margin-right: 80px;
+}
+.bouton_bleu1 {
+padding : 2px 2px 2px 2px;
+font-size : 1em;
+border-bottom: 1px solid  #3f929e;
+border-radius: 2px;
+}
+h5 {
+font-size : 2em;
+padding : 0;
+margin : 0;
+}
+input {
+height : 10px;
+margin-bottom: 5px;
+}
+
+}
+/*...............................Responsive......................*/
+/*........Tablettes............*/
+
+
+@media (min-width: 768px) and (max-width: 780px) {
+.logo img {
+width : 200px;
+}
+.logo {
+position : relative;
+margin-top : 50px;
+margin-left : 80px;
+}
+header ul {
+margin-left : 180px;
+padding-top : 15px;
+}
+header li {
+padding : 0;
+}
+header ul li a {
+font-size : 0.7em;
+padding-right : 10px;
+}
+header li /*création du trait bleu en creant une cellule pour la nav*/
+{
+   
+    padding:33px 10px 40px 10px;/*espacement du texte entre cellule et creation du border top*/ 
+    border-top: 3px solid  white;/*création du border dans "li" element de la liste*/
+   
+}
+.Accueil
+{
+    border-top:3px solid rgb(92, 173, 211);
+}
+
+h1 {
+font-size : 1.2em;
+color : white;
+text-transform : uppercase;
+margin-left : 80px;
+margin-top : -195px;
+}
+h2 {
+font-size : 0.6em;
+color : white;
+margin-left : 80px;
+margin-top : -10px;
+}
+#image_de_fond button {
+padding : 5px 5px 5px 5px;
+margin-left : 80px;
+font-size : 0.70em;
+position : absolute;
+margin-top : 2px;
+
+}
+h3 {
+font-size : 1.2em;
+margin : 150px;
+}
+/*<-fleches->*/
+
+.fleche_droite
+{
+    top: 185px;
+    right: 0px;
+    z-index: 1; 
+}
+    
+.fleche_gauche
+{
+    top: 185px;
+    left:  0px;
+    z-index: 1;
+}
+
+#Service
+{
+    margin-top: -150px;
+}
+
+.separateur {
+margin : auto;
+margin-top : -130px;
+}
+#Nos_projets {
+text-align : center;
+padding-top : 0;
+margin : auto;
+margin-top: -100px;
+}
+.icones {
+display : flex;
+float : none;
+margin-left : 150px;
+}
+.icones img {
+width : 500px;
+height : auto;
+}
+
+.navigation ul {
+list-style-type : none;
+display : flex;
+justify-content : center;
+margin-left : -40px;
+}
+#ensemble_photos {
+margin-top : 5px;
+margin : 50px;
+padding-left : 25px;
+}
+figure {
+margin : 5px;
+}
+.bouton_bleu1/*le bouton de  send message*/
+{ 
+    border-radius: 3px;
+    font-size: 1em;
+    margin: 10px;
+    border-bottom: 3px solid  #3f929e;
+
+
+
+}
+}
+
+

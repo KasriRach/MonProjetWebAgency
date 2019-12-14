@@ -55,9 +55,9 @@ header li /*création du trait bleu en creant une cellule pour la nav*/
     border-top: 3px solid #5CADD3;
    
 }
-.Accueil
+.Accueil/*le trait bleu*/
 {
-    border-top: 3px solid rgb(92, 173, 211);
+    border-top: 3px solid #5CADD3;
 }
 
  header ul
@@ -76,10 +76,10 @@ header li /*création du trait bleu en creant une cellule pour la nav*/
     font-size: 1em;
     color: #181818; 
     text-decoration: none;/*aucune décoration*/
-	text-align:right;/*alignement du bloc à droite*/
+	
 }
 
-/*<-fleches->*/
+/*fleches et demi-sphère*/
 
 .fleche_droite
 {
@@ -125,33 +125,26 @@ header li /*création du trait bleu en creant une cellule pour la nav*/
     margin-right: -6px;
 }
 
+/* Header................................................................................................................................................*/ 
 
 
 
- 
-/* Header................................................................................................................................................ 
 
-
-/*section*/
+/*section................................................................................................................................................*/
 /*image de la fillette*/
  
 #image_de_fond
 {
-    width: 100%;
-
-    position: relative;
-    margin-top: 90px;
-    
+    margin-top: 90px;  
 }
  
 #image_de_fond img
  
 {
     width: 100%;
-    height: auto;    
+    height: auto;
 }
 
- 
 #image_de_fond button
 /*création du bouton bleu*/
 /*le bouton de nav "plus d'infos"*/
@@ -166,7 +159,6 @@ header li /*création du trait bleu en creant une cellule pour la nav*/
     border-bottom: 3px solid  #3f929e;
     margin-left: 150px;
 }
-
 
 
 /*contenu de l'image*/
@@ -191,11 +183,8 @@ em/*webahency*/
 	color:  #5CADD3 ;/*couleur de la police en bleu*/
 	font-style: normal;/*supprime l'italique qui existe sur la balise <em>*/
 }
-
-
-    
-
-    /*nos services*/
+  
+    /*nos services................................................................................................................................................*/
 h3/*mise en forme du titre*/
 {
     font-size: 2em;
@@ -205,12 +194,10 @@ h3/*mise en forme du titre*/
 }
 hr/*création du séparateur*/
 { 
-    
     height: 1px;/*epaisseur du trait*/
-    width: 10%;/*langueur du trait*/
+    width: 10%;/*longueur du trait*/
     background: rgba(220,220,220,0.6) ;/*couleur de fond*/
-    border: none;/*suppression des bordures*/
-    
+    border: none;/*suppression des bordures*/ 
 }
 .pointbleu
 {
@@ -224,18 +211,15 @@ hr/*création du séparateur*/
 
 }
 .separateur/*ensemble séparateur et point bleu*/
-{
-    margin: auto;
+{  
     margin-top: 0px;
 }
     
-
 #Nos_services /*positionnement du titre du séparateur et du texte*/
 {
     text-align: center; 
     padding-top: 200px;
-
-
+    margin: auto;
 }
 
 .icones/*photo de l'ordinateur*/
@@ -255,9 +239,6 @@ hr/*création du séparateur*/
      
 }
  
-
-
-
     /*icones blues*/
 
 
@@ -268,24 +249,13 @@ hr/*création du séparateur*/
 
 }
 
-.fa-chart-line/*icone qui fonctionne avec fontawesome-free-5.11.2-web*/
+.fa-chart-line, .fa-chart-pie, .fa-cubes/*icone qui fonctionne avec fontawesome-free-5.11.2-web*/
 {
     font-size: 1.2em;
     padding: 15px 5px 5px 15px;
     color:  #5CADD3 ;
 }
-.fa-chart-pie/*icone*/
-{
-    font-size: 1.2em;
-    padding: 15px 5px 5px 15px;
-    color:  #5CADD3 ;
-}
-.fa-cubes/*icone*/
-{
-    font-size: 1.2em;
-    padding: 15px 5px 5px 15px;
-    color:  #5CADD3 ;
-}
+
 .cercle/*cercle qui contient l'icone*/
 {
     height: 50px;
@@ -305,25 +275,21 @@ hr/*création du séparateur*/
   margin-top: -20px;
   border:3px solid white;  
 
-
 }
 
-/*Section2*/
+/*Section2................................................................................................................................................*/
 /*Nos projets*/
 #Projets
 {
     background-color:  #f1f7f7;
-    padding-top: 3px;
-    
+    padding-top: 5px;/*espacement du titre et du haut de page*/
+    margin: auto;
 }
 
 #Nos_projets /*positionnement du titre séparateur et la nav*/
 {
     text-align: center; 
-    padding-top: 5px;
-    margin: auto;
-
-    
+     
 }
 
  /*bouton de navigation*/
@@ -333,22 +299,16 @@ hr/*création du séparateur*/
 {
     list-style-type: none;/*suprime les puces*/
     display: flex;  /*alignement sur une ligne*/
-    justify-content:center;
+    justify-content:center;  
 
- 
-    
 }   
  .navigation li
-{
-   
-   
+{ 
     margin-right: 0px;/*suprime les marges entre les # menus*/
     padding:5px 10px;/*espacement du texte entre cellule*/ 
-    border: 0px solid  #e0e7e7 ;/*création du border dans "li" element de la liste*/
-    background-color: #e0e7e7 ;/*fond gris*/
-    
+    border: 0px solid;/*création du border dans "li" element de la liste*/
+    background-color: #e0e7e7 ;/*fond gris*/  
 }
-
 
  .navigation li:hover 
  {
@@ -368,8 +328,7 @@ hr/*création du séparateur*/
     background:  #5CADD3 ;
     color: white;/*changement de couleur lors du passage de la souris*/
     border-bottom: 3px solid  #3f929e;/*border du bas change de couleur lors du passage de la souris*/
-    text-decoration: none;
-    
+    text-decoration: none; 
  }   
 
    a:hover, #Portfolio
@@ -387,25 +346,23 @@ hr/*création du séparateur*/
     font-size: 1.2em;  
 }
   
-
 /*création d'un ensemble de photos*/
-
-
 #ensemble_photos
 {
-  margin:auto;
-  padding-left: 380px;
+  margin-left: 35px;
+
+
   
 }
   
-
 figure
 {
     position: relative;
     display: inline-block;
-    overflow: hidden;
     width: 300px;
     height:200px;
+    margin-right:  5px;
+
    
 }
  
@@ -429,7 +386,7 @@ padding: 0px 15px 0px 15px;
     position: absolute;
     display:block;
     right: 0;/*positionnement de la legende soit en bas avec 0 à droite et gauche*/
-    left: 0px;
+    left: 0;
     bottom:0;
     height: 100px;
     background-color: rgba(1, 1, 1, 0.5);
@@ -470,7 +427,7 @@ padding: 0px 15px 0px 15px;
     align-items: center;
     justify-content: center;
     fonctionne également mais pour le cercle
-    perment de centrer l'oeil dans le cercle*/
+    permet de centrer l'oeil dans le cercle*/
 }    
 /*Section3*/
 /*contact*/
@@ -488,7 +445,7 @@ padding: 0px 15px 0px 15px;
     font-size: 0.9em;
     position: relative; 
     margin: 120px 150px;/*centrage du bloc contact*/
-    opacity:;
+    
     
 }
 iframe
@@ -532,7 +489,8 @@ input
 {
     width: 95%;/*taille de la cellule ici elle occupe 95% du bloc*/
     height: 25px;
-    border-radius: 3px;
+    border-radius:3px;
+    border: 1px solid #A9A9A9;
     margin-bottom: 15px;
     padding-left: 10px;
     font-family: 'Roboto', sans-serif;
@@ -543,7 +501,7 @@ textarea
 {
     width: 95%;
     height: 120px;
-    border-radius: 3px;
+    border-radius: 3px ;
     padding-left: 10px;
     font-family: 'Roboto', sans-serif;
     color: #181818;
@@ -670,11 +628,14 @@ margin-left:17px;
 font-size : 1.5em;
 }
 #ensemble_photos
+
 {
-  margin:auto;
-  padding-left: 0px;
-  
+  margin-left: 0px;
+ 
+margin: auto;
 }
+
+
 
 #contact {
 height : 325px;
@@ -824,8 +785,67 @@ margin : 5px;
     border-bottom: 3px solid  #3f929e;
 
 
+}
+}
+/*<----------------Résolution inférieur à 1024px---------------->*/
+
+@media (min-width: 769px) and (max-width: 1024px)
+{
+    .logo 
+{  
+   margin-left:60px;
+}
+/*contenu de l'image*/
+h1/*WEBAGENCY: L'AGENCE DE TOUS VOS PROJETS!*/
+{
+    
+    margin-left: 50px;/*decale le texte à gauche*/
+    margin-top: -280px;
+}       
+h2/*Vous avez un projet web ? La WebAgency vous aide à le réaliser*/
+{
+    font-size: 0.7em;/*taille de la police*/
+    margin-left: 50px;
 
 }
+#image_de_fond button
+/*création du bouton bleu*/
+/*le bouton de nav "plus d'infos"*/
+{
+    font-size: 0.9em;
+    margin-left: 50px;
+}
+ header ul
+{  
+    margin-left: 250px;/*110 à gauche*/ 
+}   
+
+/*<-fleches->*/
+
+.fleche_droite
+{ 
+    top: 235px;   
+}   
+.fleche_gauche
+{  
+    top: 235px;  
+}
+.icones {
+display : flex;
+float : none;
+margin-left: 260px;
+}
+.icones img {
+width : 500px;
+height : auto;
+}
+ #ensemble_photos
+{
+  margin:auto;
+  padding-left: 130px;
+  
+}
+
 }
 
 

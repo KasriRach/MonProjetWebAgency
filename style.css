@@ -310,7 +310,7 @@ hr/*création du séparateur*/
     background-color: #e0e7e7 ;/*fond gris*/  
 }
 
- .navigation li:hover 
+ .navigation li:hover
  {
     color: white;/*changement de couleur lors du passage de la souris*/
     background:  #5CADD3 ;
@@ -349,27 +349,21 @@ hr/*création du séparateur*/
 /*création d'un ensemble de photos*/
 #ensemble_photos
 {
+  margin:auto;
   margin-left: 35px;
-
-
   
 }
-  
-figure
-{
-    position: relative;
-    display: inline-block;
-    width: 300px;
-    height:200px;
-    margin-right:  5px;
-
-   
+figure {
+position : relative;
+display : inline-block;
+width : 300px;
+height : 200px;
+margin-right : 5px;
 }
  
 figure img
 {
-
-    width: 100%;
+   width: 100%;
     position: absolute;    
 }
  
@@ -511,8 +505,6 @@ textarea
 /*...............................Responsive......................*/
 /*........Smartphone............*/
 
-
-
 @media only screen and (max-device-width: 480px) {
 body
 {
@@ -583,6 +575,7 @@ max-width : 100%;
 #image_de_fond button {
 
 font-size: 0.65em;
+
 }
 .fleche_droite, .fleche_gauche, .fa-angle-left, .fa-angle-right
 {
@@ -631,7 +624,6 @@ font-size : 1.5em;
 
 {
   margin-left: 0px;
- 
 margin: auto;
 }
 
@@ -659,8 +651,10 @@ input {
 height : 10px;
 margin-bottom: 5px;
 }
-
 }
+
+
+
 /*...............................Responsive......................*/
 /*........Tablettes............*/
 
@@ -832,20 +826,69 @@ h2/*Vous avez un projet web ? La WebAgency vous aide à le réaliser*/
 }
 .icones {
 display : flex;
-float : none;
-margin-left: 260px;
+float : left;
+margin-left: 10px;
 }
 .icones img {
 width : 500px;
 height : auto;
+margin-top: 20px;
 }
- #ensemble_photos
+.services
 {
-  margin:auto;
-  padding-left: 130px;
+    font-size: 1em;
+    padding: 0px;
+    margin: 10px;
+}
+#ensemble_photos
+{
+  margin-left: 25px; 
+}
+figure {
+width : 240px;
+height : 190px;
+margin-right : 0px;
+margin-left: 0px;
+
+}
+figure p 
+{
+padding: 0px 15px 0px 15px;
+font-size: 0.75em;
+}
+.legende
+{ 
+    bottom:30px;
+    height: 70px;   
+}
+.legendes
+{ 
+    bottom:30px;
+    height: 70px;
+    
+}
+#contact
+{
+    display: flex;/*alignement bloc*/
+    align-items: center;
+    float: right;
+    background-color: rgba(241,247,247,0.8);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    height: 450px;
+    width: 350px;
+    font-size: 0.9em;
+    position: relative; 
+    margin: 50px 100px;/*centrage du bloc contact*/
+    
+    
+}
   
 }
 
-}
+
+
+
 
 
